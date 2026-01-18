@@ -1,12 +1,12 @@
-/* --- Variables --- */
+
 :root {
-    --primary-color: #007bff; /* ლურჯი */
+    --primary-color: #007bff;
     --primary-dark: #0056b3;
-    --secondary-color: #6c757d; /* მუქი ნაცრისფერი */
-    --accent-color: #28a745; /* მწვანე */
-    --bg-light: #f8f9fa; /* ღია ფონი */
-    --bg-dark: #343a40; /* მუქი ფონი */
-    --text-dark: #212529; /* ტექსტის მუქი ფერი */
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --bg-light: #f8f9fa; 
+    --bg-dark: #343a40; 
+    --text-dark: #212529; 
     --text-light: #f1f1f1;
     --border-color: #e9ecef; 
     --white: #ffffff;
@@ -173,11 +173,21 @@ img {
     text-decoration: underline;
 }
 
+.main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
+    background-color: var(--white);
 }
 
 .nav-logo {
