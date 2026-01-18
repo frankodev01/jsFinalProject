@@ -1,0 +1,65 @@
+{
+  "courses": [
+    {
+      "Web": [
+        {
+          "courseImg": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+          "course": "ვებ დეველოპმენტი",
+          "courseP": "ისწავლეთ HTML, CSS, JavaScript, React და შექმენით ინტერაქტიული ვებსაიტები.",
+          "module": "10 მოდული",
+          "duration": "80 საათი"
+        }
+      ],
+      "DataScience": [
+        {
+          "courseImg": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+          "course": "მონაცემთა მეცნიერება",
+          "courseP": "ისწავლეთ Python, R, მონაცემთა ანალიზი და მანქანური სწავლება.",
+          "module": "12 მოდული",
+          "duration": "100 საათი"
+        }
+      ],
+      "CyberSecurity": [
+        {
+          "courseImg": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80",
+          "course": "კიბერუსაფრთხოება",
+          "courseP": "ისწავლეთ ქსელური უსაფრთხოება, კრიპტოგრაფია და ეთიკური ჰაკინგი.",
+          "module": "8 მოდული",
+          "duration": "70 საათი"
+        }
+      ],
+      "uiux": [
+        {
+          "courseImg": "https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=600&q=80",
+          "course": "UI/UX დიზაინი",
+          "courseP": "ისწავლეთ მომხმარებლის გამოცდილების დიზაინი, პროტოტიპირება და ვიზუალური დიზაინი.",
+          "module": "9 მოდული",
+          "duration": "75 საათი"
+        }
+      ]
+    }
+  ],
+
+  "studentComment": [
+    {
+      "name": "ნიკა ჯაფარიძე",
+      "comment": "ვებ დეველოპმენტის კურსმა ჩემი ცხოვრება შეცვალა! ახლა ვმუშაობ წამყვან IT კომპანიაში.",
+      "img": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "name": "მარიამ კობახიძე",
+      "comment": "მონაცემთა მეცნიერების კურსმა მომცა უნარები, რომლებიც მეხმარება ყოველდღიურ მუშაობაში.",
+      "img": "https://randomuser.me/api/portraits/women/44.jpg"
+    },  
+    {
+      "name": "გიორგი ლომიძე",
+      "comment": "კიბერუსაფრთხოების კურსმა მომცა ცოდნა, რომელიც მეხმარება ჩემი კომპანიის დაცვაში.",
+      "img": "https://randomuser.me/api/portraits/men/56.jpg"
+    },
+    {
+      "name": "თამარ შავგულიძე",
+      "comment": "UI/UX დიზაინის კურსმა მომცა უნარები, რომლებსაც ყოველდღიურად ვიყენებ ჩემს პროექტებში.",
+      "img": "https://randomuser.me/api/portraits/women/68.jpg"
+    }
+  ]
+}
