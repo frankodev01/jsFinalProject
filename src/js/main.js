@@ -58,3 +58,52 @@ axios.get("http://127.0.0.1:3000/studentComments")
     });
   })
   .catch(error => console.error('Error:', error));
+
+
+  document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+        const accordionItem = button.parentElement;
+        
+
+        document.querySelectorAll('.accordion-item').forEach(item => {
+            if (item !== accordionItem) {
+                item.classList.remove('active');
+            }
+        });
+
+        accordionItem.classList.toggle('active');
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cookieBanner = document.getElementById("cookie-notice");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  if (!localStorage.getItem("cookieAccepted")) {
+    setTimeout(() => {
+      cookieBanner.classList.add("show");
+    }, 2000);
+  }
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookieAccepted", "true");
+    cookieBanner.classList.remove("show");
+  });
+});
+
+const scrollBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+        scrollBtn.classList.add("show");
+    } else {
+        scrollBtn.classList.remove("show");
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

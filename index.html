@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+    <button id="scrollToTop" class="scroll-top-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <header class="main-header">
       <div class="top-banner">
         <div class="banner-content container">
@@ -111,7 +115,6 @@
                       alt="Online Learning"
                     />
                   </li>
-
                   <li class="splide__slide">
                     <img
                       src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
@@ -170,7 +173,6 @@
           <p class="section-subtitle">
             ჩვენი პლატფორმა შექმნილია თქვენი წარმატებისთვის.
           </p>
-
           <div class="features-grid">
             <div class="feature-card">
               <div class="feature-icon-wrapper">
@@ -211,7 +213,6 @@
               >ყველა კურსი <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
-
           <div class="courses-grid">
             <div class="course-card"></div>
           </div>
@@ -226,9 +227,59 @@
               >იხილეთ ყველა <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
-
           <div class="testimonials-grid">
             <div class="testimonial-card"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="section-title">ხშირად დასმული კითხვები</h2>
+          <p class="section-subtitle">
+            ყველაფერი, რაც უნდა იცოდეთ ჩვენი პლატფორმის შესახებ
+          </p>
+          <div class="accordion-container">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>როგორ დავიწყო სწავლა Elite Academics-ზე?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  სწავლის დასაწყებად საჭიროა გაიაროთ მარტივი რეგისტრაცია,
+                  აირჩიოთ სასურველი კურსი და დააჭიროთ "დაწყების" ღილაკს.
+                  ზოგიერთი კურსი სრულიად უფასოა.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span
+                  >მივიღებ თუ არა სერტიფიკატს კურსის დასრულების შემდეგ?</span
+                >
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  დიახ, ყველა ფასიანი კურსის წარმატებით დასრულების შემდეგ თქვენ
+                  გადმოგეცემათ საერთაშორისო სტანდარტების შესაბამისი ციფრული
+                  სერტიფიკატი.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>შესაძლებელია თუ არა თანხის უკან დაბრუნება?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  ჩვენ გვაქვს 14-დღიანი გარანტია. თუ კურსი არ მოგეწონებათ,
+                  შეგიძლიათ მოითხოვოთ თანხის სრული დაბრუნება სწავლის დაწყებიდან
+                  პირველი ორი კვირის განმავლობაში.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -281,7 +332,6 @@
             პრემიუმ ონლაინ განათლება თქვენი წარმატებისთვის.
           </p>
         </div>
-
         <div class="footer-links">
           <h4 class="footer-heading">სწრაფი ლინკები</h4>
           <ul>
@@ -291,7 +341,6 @@
             <li><a href="#" class="footer-link">კონტაქტი</a></li>
           </ul>
         </div>
-
         <div class="footer-contact">
           <h4 class="footer-heading">კონტაქტი</h4>
           <ul>
@@ -302,7 +351,6 @@
             </li>
           </ul>
         </div>
-
         <div class="footer-social">
           <h4 class="footer-heading">გამოგვყევით</h4>
           <div class="social-icons">
@@ -319,6 +367,25 @@
         </div>
       </div>
     </footer>
+
+    <div id="cookie-notice" class="cookie-banner">
+      <div class="cookie-content">
+        <div class="cookie-icon">
+          <i class="fa-solid fa-cookie-bite"></i>
+        </div>
+        <div class="cookie-text">
+          <h4>ჩვენ ვიყენებთ ქუქი-ფაილებს</h4>
+          <p>
+            საუკეთესო გამოცდილების მისაღებად, ჩვენი საიტი იყენებს Cookies.
+            გაგრძელებით თქვენ ეთანხმებით მათ გამოყენებას.
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button id="accept-cookies" class="btn-primary">ვეთანხმები</button>
+          <a href="#" class="cookie-link">გაიგე მეტი</a>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
