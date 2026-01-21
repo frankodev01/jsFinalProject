@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Academics | რეგისტრაცია</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="auth-page">
+        <div class="animated-background" id="logo-canvas"></div>
+
+        <div class="auth-container">
+          <div class="auth-card">
+            <div class="auth-header">
+              <div class="brand-logo">
+                <div class="logo-inner">
+                  <i class="fas fa-user-plus"></i>
+                </div>
+                <span>Elite Academics</span>
+              </div>
+              <h2>შექმენით ანგარიში</h2>
+              <p>შემოუერთდით საუკეთესო სასწავლო პლატფორმას</p>
+            </div>
+
+            <form id="register-form">
+              <div class="input-wrapper">
+                <label>სრული სახელი</label>
+                <div class="input-group">
+                  <i class="fas fa-user main-icon"></i>
+                  <input
+                    type="text"
+                    id="reg-name"
+                    placeholder="გიორგი გიორგაძე"
+                    required
+                  />
+                  <span class="focus-border"></span>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label>ელ-ფოსტა</label>
+                <div class="input-group">
+                  <i class="fas fa-envelope main-icon"></i>
+                  <input
+                    type="email"
+                    id="reg-email"
+                    placeholder="example@elite.ge"
+                    required
+                  />
+                  <span class="focus-border"></span>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label>პაროლი</label>
+                <div class="input-group">
+                  <i class="fas fa-lock main-icon"></i>
+                  <input
+                    type="password"
+                    id="reg-pass"
+                    placeholder="••••••••"
+                    required
+                  />
+                  <i
+                    class="fas fa-eye-slash toggle-password"
+                    onclick="togglePass('reg-pass', this)"
+                  ></i>
+                  <span class="focus-border"></span>
+                </div>
+                <div class="pass-strength">
+                  <div class="strength-bar" id="strength-bar"></div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label>გაიმეორეთ პაროლი</label>
+                <div class="input-group">
+                  <i class="fas fa-check-double main-icon"></i>
+                  <input
+                    type="password"
+                    id="reg-confirm"
+                    placeholder="••••••••"
+                    required
+                  />
+                  <span class="focus-border"></span>
+                </div>
+              </div>
+
+              <button type="submit" class="auth-submit">
+                <span>რეგისტრაცია</span>
+                <i class="fas fa-user-check"></i>
+              </button>
+            </form>
+
+            <div class="auth-footer">
+              უკვე გაქვთ ანგარიში? <a href="auth.html">შესვლა</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/js/reg.js"></script>
+  </body>
+</html>

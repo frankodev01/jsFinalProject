@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
@@ -71,16 +72,22 @@
               <li><a href="about.html" class="nav-item">ჩვენს შესახებ</a></li>
               <li><a href="pricing.html" class="nav-item">ფასები</a></li>
               <li><a href="contact.html" class="nav-item">კონტაქტი</a></li>
+              
+              <div class="nav-auth-buttons">
+                <a href="reg.html"
+                  ><button class="btn-secondary">რეგისტრაცია</button></a
+                >
+                <a href="auth.html"
+                  ><button class="btn-primary">შესვლა</button></a
+                >
+              </div>
             </ul>
-
-            <div class="nav-auth-buttons">
-              <button class="btn-secondary">რეგისტრაცია</button>
-              <button class="btn-primary">შესვლა</button>
-            </div>
           </nav>
         </div>
       </div>
     </header>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
 
     <main>
       <section class="hero-section">

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Academics | ავტორიზაცია</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="auth-page">
+        <div class="animated-background" id="logo-canvas"></div>
+
+        <div class="auth-container">
+          <div class="auth-card">
+            <div class="auth-header">
+              <div class="brand-logo">
+                <div class="logo-inner">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span>Elite Academics</span>
+              </div>
+              <h2>კეთილი იყოს თქვენი მობრძანება</h2>
+              <p>ავტორიზაცია პრემიუმ განათლებისთვის</p>
+            </div>
+
+            <form id="login-form">
+              <div class="input-wrapper">
+                <label>ელ-ფოსტა</label>
+                <div class="input-group">
+                  <i class="fas fa-envelope main-icon"></i>
+                  <input
+                    type="email"
+                    id="login-email"
+                    placeholder="example@elite.ge"
+                    required
+                  />
+                  <span class="focus-border"></span>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label>პაროლი</label>
+                <div class="input-group">
+                  <i class="fas fa-lock main-icon"></i>
+                  <input
+                    type="password"
+                    id="login-pass"
+                    placeholder="••••••••"
+                    required
+                  />
+                  <i class="fas fa-eye-slash toggle-password" id="eye-icon"></i>
+                  <span class="focus-border"></span>
+                </div>
+              </div>
+
+              <div class="form-options">
+                <label class="remember-me">
+                  <input type="checkbox" /> <span>დამიმახსოვრე</span>
+                </label>
+                <a href="#" class="forgot-link">დაგავიწყდათ პაროლი?</a>
+              </div>
+
+              <button type="submit" class="auth-submit">
+                <span>შესვლა</span>
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </form>
+
+            <div class="divider"><span>ან გააგრძელეთ</span></div>
+
+            <div class="social-auth">
+              <button class="social-btn"><i class="fab fa-google"></i></button>
+              <button class="social-btn"><i class="fab fa-apple"></i></button>
+              <button class="social-btn">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+            </div>
+
+            <div class="auth-footer">
+              არ გაქვთ ანგარიში? <a href="reg.html">დარეგისტრირდით</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/js/auth.js"></script>
+  </body>
+</html>
